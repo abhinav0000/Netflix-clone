@@ -31,5 +31,5 @@ class MOvie(models.Model):
     age_limit=models.CharField(max_length=10,choices=AGE_CHOICES)
 
 class Video(models.Model):
-    title=models.CharField(max_length=225,blank=True,nul=True)
+    title=models.CharField(max_length=225,blank=True,null=True)
     file = models.FileField(upload_to='movies')
