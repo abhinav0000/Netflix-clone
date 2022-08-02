@@ -124,6 +124,9 @@ MEDIA_ROOT = BASE_DIR/'media'
 MEDIA_URL = '/media/'
 STATICFILES_DIRS = [BASE_DIR/'static']
 
+#auth settings
+AUTH_USER_MODEL = 'core_CustomUser'
+  
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

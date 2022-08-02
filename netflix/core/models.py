@@ -1,12 +1,11 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
-
+import uuid
 # Create your models here.
 
 AGE_CHOICES = (
     ('ALL','ALL'),
-    ('Kids','Kids');
-
+    ('Kids','Kids')
 )
 class CustomUser(AbstractUser):
     profiles = models.ManyToManyFiels('Profile',null=True,blank =True)
